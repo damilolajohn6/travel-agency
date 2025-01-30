@@ -1,11 +1,13 @@
 import React from 'react'
-import ServiceHeroSection from "../components/ServicesHeroSection";
+import ResourceHeroSection from '../components/ResourceHeroSection';
+import ContactForm from "../components/ContactForm"
 
 
 const Resource = () => {
   return (
     <div className="">
-      <ServiceHeroSection />
+      <ResourceHeroSection />
+      <ContactForm />
     </div>
   );
 }

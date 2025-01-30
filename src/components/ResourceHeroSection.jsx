@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import heroImg from "../assets/services-img.png";
+import heroImg from "../assets/resource-img.png";
 
-const ServiceHeroSection = () => {
+
+const ResourceHeroSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
@@ -77,7 +78,7 @@ const ServiceHeroSection = () => {
               About Us
             </Link>
             <Link to="/contact">
-              <button className="ml-4 bg-blue-700 px-4 py-2 rounded-lg text-white font-semibold hover:bg-white hover:text-[#B08D79] transition duration-300">
+              <button className="ml-4 bg-blue-700 px-4 py-2 rounded-lg  text-white font-semibold hover:bg-white hover:text-[#B08D79] transition duration-300">
                 Contact Us
               </button>
             </Link>
@@ -106,6 +107,9 @@ const ServiceHeroSection = () => {
             <Link to="/about" className="block hover:text-blue-500">
               About Us
             </Link>
+            <Link to="/contact" className="block hover:text-blue-500">
+              Contact Us
+            </Link>
           </nav>
         </div>
       </header>
@@ -113,13 +117,11 @@ const ServiceHeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 px-6 md:px-12 lg:px-20 text-left w-full max-w-2xl">
         <h1 className="text-1xl md:text-3xl font-bold leading-tight">
-          Seamless Visa Processing for a <br />
-          Brighter Future
+          Resources
         </h1>
         <p className="mt-4 text-lg md:text-xl font-semibold text-yellow-500">
-          Lorem ipsum dolor sit amet consectetur. Netus ut integer erat libero
-          at arcu. Id non feugiat et tempor accumsan sit fermentum sollicitudin
-          pulvinar. Sodales vitae odio mi viverra.
+          Your Ultimate Guide to Student Visas, Scholarships, and Grants – All
+          the Resources You Need in One Place
         </p>
         <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">
           Start Your Visa Application
@@ -129,4 +131,4 @@ const ServiceHeroSection = () => {
   );
 };
 
-export default ServiceHeroSection;
+export default ResourceHeroSection;

@@ -87,7 +87,7 @@ const HeroSection = () => {
         {/* Mobile Menu */}
         <div
           ref={menuRef}
-          className={`absolute left-0 w-full bg-white text-gray-800 shadow-lg transform ${
+          className={`absolute left-0 w-full bg-white text-gray-900 font-semibold shadow-lg transform ${
             menuOpen
               ? "translate-y-0 opacity-100"
               : "-translate-y-5 opacity-0 pointer-events-none"
@@ -105,6 +105,9 @@ const HeroSection = () => {
             </Link>
             <Link to="/about" className="block hover:text-blue-500">
               About Us
+            </Link>
+            <Link to="/contact" className="block hover:text-blue-500">
+              Contact Us
             </Link>
           </nav>
         </div>
