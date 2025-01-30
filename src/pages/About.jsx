@@ -1,9 +1,24 @@
 import React from 'react'
+import ServiceHeroSection from '../components/ServicesHeroSection';
+import Vission from '../components/Vission';
+import HelpSection from '../components/HelpSection';
+import VideoPlayer from "../components/VideoPlayer";
+import Testimonial from '../components/Testimonial';
+import FAQSection from '../components/FAQSection';
+import ContactForm from '../components/ContactForm';
 
 const About = () => {
   return (
-    <div className="container mx-auto py-6 px-6 md:px-12 lg:px-6">
-      About
+    <div className="">
+      <ServiceHeroSection />
+      <Vission />
+      <HelpSection />
+      <div className="flex items-center justify-center bg-blue-950">
+        <VideoPlayer videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+      </div>
+      <Testimonial />
+      <FAQSection />
+      <ContactForm />
     </div>
   );
 }

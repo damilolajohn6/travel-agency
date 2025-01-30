@@ -35,6 +35,11 @@ function HelpSection() {
             </div>
           </div>
         </div>
+        <div className="flex items-center justify-center py-6">
+          <button className="bg-blue-700  text-white py-3 px-6 rounded-md hover:bg-blue-950 transition text-sm md:text-base">
+            Start Your Visa Application
+          </button>
+        </div>
       </div>
     </section>
   );

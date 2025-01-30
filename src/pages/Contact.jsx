@@ -1,10 +1,14 @@
 import React from 'react'
+import ServiceHeroSection from "../components/ServicesHeroSection";
+import Vission from '../components/Vission';
+
 
 const Contact = () => {
 
   return (
-    <div className="container mx-auto py-6 px-6 md:px-12 lg:px-6">
-      Contact 
+    <div className="">
+      <ServiceHeroSection />
+      <Vission />
     </div>
   );
 }
