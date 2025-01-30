@@ -42,7 +42,7 @@ const Testimonial = () => {
       <h1 className="text-center text-3xl font-bold text-blue-950 mb-6">
         What Our Clients Are Saying
       </h1>
-      <p className="text-center mb-6 text-gray-900">
+      <p className="text-center mb-6 text-gray-900 max-w-3xl mx-auto">
         Hear from our satisfied clients who’ve achieved their dreams with our
         expert guidance. From securing visas to landing scholarships, their
         success stories showcase the impact we’ve made in transforming
@@ -72,7 +72,7 @@ const Testimonial = () => {
       </Slider>
 
       {/* Custom Navigation Buttons */}
-      <div className="flex gap-4 mt-8">
+      <div className="flex gap-4 mt-8 justify-center sm:justify-start">
         <button
           onClick={() => sliderRef.current?.slickPrev()}
           className="p-4 bg-white border border-blue-800 rounded-lg shadow hover:bg-gray-200 hover:text-white transition"

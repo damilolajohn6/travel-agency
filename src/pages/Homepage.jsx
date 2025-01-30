@@ -7,6 +7,7 @@ import Vission from '../components/Vission';
 import FAQSection from '../components/FAQSection';
 import ContactForm from '../components/ContactForm';
 import Testimonial from '../components/Testimonial';
+import VideoPlayer from '../components/VideoPlayer';
 
 
 const Homepage = () => {
@@ -18,13 +19,13 @@ const Homepage = () => {
       <Vission />
       <HelpSection />
       <ServicesSection />
-
+      <div className="flex items-center justify-center bg-blue-950">
+        <VideoPlayer videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+      </div>
       <Testimonial />
-
       <FAQSection />
       <ContactForm />
     </div>
-
   );
 }
 

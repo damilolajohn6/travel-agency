@@ -31,11 +31,13 @@ const CardSection = () => {
   ];
 
   return (
-    <div className="container mx-auto py-10 px-6 grid gap-6 md:grid-cols-1 lg:grid-cols-1">
-      {cards.map((card, index) => (
-        <Card key={index} title={card.title} description={card.description} />
-      ))}
-    </div>
+    <section className="bg-gray-100">
+      <div className="container  mx-auto py-10 px-6 grid gap-6 md:grid-cols-1 lg:grid-cols-1">
+        {cards.map((card, index) => (
+          <Card key={index} title={card.title} description={card.description} />
+        ))}
+      </div>
+    </section>
   );
 };
 
