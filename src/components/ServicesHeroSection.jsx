@@ -113,13 +113,13 @@ const ServiceHeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 px-6 md:px-12 lg:px-20 text-left w-full max-w-2xl">
         <h1 className="text-1xl md:text-3xl font-bold leading-tight">
-          Your Gateway to Global Education –<br />
-          Simplified Visa Processing and <br />
-          Scholarship Success!
+          Seamless Visa Processing for a <br />
+          Brighter Future
         </h1>
         <p className="mt-4 text-lg md:text-xl font-semibold text-yellow-500">
-          Helping thousands of students secure visas and <br />
-          scholarships for their dream universities.
+          Lorem ipsum dolor sit amet consectetur. Netus ut integer erat libero
+          at arcu. Id non feugiat et tempor accumsan sit fermentum sollicitudin
+          pulvinar. Sodales vitae odio mi viverra.
         </p>
         <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">
           Start Your Visa Application
