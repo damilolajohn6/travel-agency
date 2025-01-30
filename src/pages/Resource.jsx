@@ -1,11 +1,13 @@
 import React from 'react'
+import ServiceHeroSection from "../components/ServicesHeroSection";
+
 
 const Resource = () => {
   return (
-     <div className="container mx-auto py-6 px-6 md:px-12 lg:px-6">
-      Resource
+    <div className="">
+      <ServiceHeroSection />
     </div>
-  )
+  );
 }
 
 export default Resource
