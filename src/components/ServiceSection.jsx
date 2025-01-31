@@ -95,8 +95,10 @@ const services = [
 export default function ServiceSection() {
   return (
     <section className="py-12 px-4 lg:px-20">
-      <h2 className="text-3xl font-serif font-bold text-blue-900 mb-4">What we Do</h2>
-      <p className="text-gray-600 font-semibold mb-8 w-1/3">
+      <h2 className="text-3xl font-serif font-bold text-blue-900 mb-4">
+        What we Do
+      </h2>
+      <p className="text-gray-600 font-semibold mb-8 w-full md:w-1/3">
         We provide end-to-end support to help students navigate visa
         applications, secure scholarships, and access grants.
       </p>
@@ -106,13 +108,15 @@ export default function ServiceSection() {
             key={index}
             className="flex flex-col md:flex-row items-start bg-white shadow-lg rounded-lg overflow-hidden"
           >
-            <div className="md:w-1/3 h-48 bg-gray-300">
+            {/* Image Section - Now fully responsive */}
+            <div className="w-full md:w-1/3 h-48 md:h-auto bg-gray-300">
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover md:h-auto"
               />
             </div>
+            {/* Content Section */}
             <div className="p-6 md:w-2/3">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {service.title}
