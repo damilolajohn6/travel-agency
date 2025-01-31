@@ -39,7 +39,7 @@ const ResourceHeroSection = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="text-xl md:text-2xl font-bold">
-            Travel Agency
+            TravelAgency
           </Link>
 
           {/* Mobile Menu Button */}

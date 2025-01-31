@@ -77,7 +77,7 @@ const HeroSection = () => {
               About Us
             </Link>
             <Link to="/contact">
-              <button className="ml-4 bg-[#B08D79] px-4 py-2 rounded-lg border border-[#B08D79] text-white font-semibold hover:bg-white hover:text-[#B08D79] transition duration-300">
+              <button className="ml-4 bg-blue-700 px-4 py-2 rounded-lg  text-white font-semibold hover:bg-blue-900 hover:text-white transition duration-300">
                 Contact Us
               </button>
             </Link>
