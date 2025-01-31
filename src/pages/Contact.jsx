@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
-import ServiceHeroSection from "../components/ServicesHeroSection";
+import ContactHeroSection from "../components/ContactHeroSection";
 import Map from "../components/Map";
 
 const Contact = () => {
@@ -22,19 +22,20 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Submitted", formData);
-    // Add API call or email submission logic here
+    console.log("Form Data Submitted:", formData);
+    alert("Form submitted successfully!");
   };
 
   return (
-    <div>
-      <ServiceHeroSection />
+    <div className=''>
+      <ContactHeroSection />
       <section className="container mx-auto px-4 py-16">
-        <div className="text-center mx-auto flex flex-col items-center">
+        <div className="text-center mx-auto items-center flex flex-col">
           <h2 className="text-3xl font-bold">Get In Touch With Us</h2>
-          <p className="text-gray-600 mt-2 w-2/3 font-semibold">
-            Please leave a message if you have any questions or difficulties
-            using our website. Our team will get back to you shortly.
+          <p className="text-gray-600 mt-2 w-full md:w-2/3">
+            Please leave a message if you have any questions or are experiencing
+            any difficulty using our website. Our team will get back to you
+            shortly.
           </p>
           <div className="bg-red-600 my-2 h-1 w-[90px]"></div>
         </div>
@@ -45,45 +46,50 @@ const Contact = () => {
           <div className="flex-1 p-6">
             <form
               onSubmit={handleSubmit}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-white p-8 shadow-lg rounded-lg"
+              className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white p-8 shadow-lg rounded-lg"
             >
               <input
                 type="text"
                 name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
                 placeholder="First Name *"
                 className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
               />
               <input
                 type="text"
                 name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
                 placeholder="Last Name *"
                 className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
               />
               <input
                 type="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
                 placeholder="Email Address *"
                 className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
+                value={formData.email}
+                onChange={handleChange}
+                required
               />
               <input
                 type="text"
                 name="mobile"
-                value={formData.mobile}
-                onChange={handleChange}
                 placeholder="Mobile Number *"
                 className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
+                value={formData.mobile}
+                onChange={handleChange}
+                required
               />
               <select
                 name="studyDestination"
+                className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
                 value={formData.studyDestination}
                 onChange={handleChange}
-                className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
+                required
               >
                 <option value="" disabled>
                   Study Destination?
@@ -95,9 +101,10 @@ const Contact = () => {
               </select>
               <select
                 name="studyPlan"
+                className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
                 value={formData.studyPlan}
                 onChange={handleChange}
-                className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
+                required
               >
                 <option value="" disabled>
                   When Do You Plan To Study?
@@ -108,9 +115,10 @@ const Contact = () => {
               </select>
               <select
                 name="counselingMode"
+                className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
                 value={formData.counselingMode}
                 onChange={handleChange}
-                className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
+                required
               >
                 <option value="" disabled>
                   Mode of Counseling
@@ -120,9 +128,10 @@ const Contact = () => {
               </select>
               <select
                 name="funding"
+                className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
                 value={formData.funding}
                 onChange={handleChange}
-                className="border p-3 rounded-md w-full focus:border-blue-500 outline-none"
+                required
               >
                 <option value="" disabled>
                   Fund Your Education?
@@ -133,9 +142,10 @@ const Contact = () => {
               </select>
               <select
                 name="studyLevel"
+                className="border p-3 rounded-md w-full focus:border-blue-500 outline-none md:col-span-2"
                 value={formData.studyLevel}
                 onChange={handleChange}
-                className="border p-3 rounded-md w-full focus:border-blue-500 outline-none col-span-1 lg:col-span-2"
+                required
               >
                 <option value="" disabled>
                   Preferred Study Level
@@ -146,7 +156,7 @@ const Contact = () => {
               </select>
               <button
                 type="submit"
-                className="col-span-1 lg:col-span-2 w-1/2 font-semibold bg-blue-500 hover:bg-blue-600 text-white py-3 px-5 rounded-md transition"
+                className="col-span-1 md:col-span-2 w-auto font-semibold bg-blue-500 hover:bg-blue-600 text-white py-3 px-5 rounded-md transition"
               >
                 Let's hear from you
               </button>

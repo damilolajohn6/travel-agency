@@ -1,5 +1,5 @@
 import React from 'react'
-import ServiceHeroSection from '../components/ServicesHeroSection';
+import AboutHeroSection from "../components/AboutHeroSection";
 import Vission from '../components/Vission';
 import HelpSection from '../components/HelpSection';
 import VideoPlayer from "../components/VideoPlayer";
@@ -12,7 +12,7 @@ import ContactForm from '../components/ContactForm';
 const About = () => {
   return (
     <div className="">
-      <ServiceHeroSection />
+      <AboutHeroSection />
       <Vission />
       <HelpSection />
       <div className="flex items-center justify-center bg-blue-950">
