@@ -35,7 +35,7 @@ const ContactHeroSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       {/* Header */}
-      <header className="absolute top-0 left-0 w-full px-4 md:px-10 py-4">
+      <header className="absolute top-0 left-0 w-full px-4 md:px-10 py-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="text-xl md:text-2xl font-bold">
