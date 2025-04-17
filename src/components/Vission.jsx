@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Vission = () => {
   return (
@@ -38,9 +39,11 @@ const Vission = () => {
             </div>
 
             <div className="flex justify-center lg:justify-start">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white py-3 px-6 font-semibold rounded-md transition transform hover:scale-105">
-                Start Your Visa Application
-              </button>
+              <Link to="/contact">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white py-3 px-6 font-semibold rounded-md transition transform hover:scale-105">
+                  Start Your Visa Application
+                </button>
+              </Link>
             </div>
           </div>
 
