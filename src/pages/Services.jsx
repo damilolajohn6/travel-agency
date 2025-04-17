@@ -1,7 +1,7 @@
 import React from 'react'
 import ServiceHeroSection from '../components/ServicesHeroSection';
 import Vission from '../components/Vission';
-import VideoPlayer from '../components/VideoPlayer';
+//import VideoPlayer from '../components/VideoPlayer';
 import Testimonial from "../components/Testimonial";
 import ContactForm from "../components/ContactForm"
 import CardSection from '../components/CardSection';
@@ -17,9 +17,9 @@ const Services = () => {
       <ServiceCard />
 
       <Vission />
-      <div className="flex items-center justify-center bg-blue-950">
+      {/* <div className="flex items-center justify-center bg-blue-950">
         <VideoPlayer videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
-      </div>
+      </div> */}
       <Testimonial />
       <ContactForm />
     </div>

@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import heroImg from "../assets/services-img.png";
+import logo from "../assets/givaj1.png";
+
 
 const ServiceHeroSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,7 +40,12 @@ const ServiceHeroSection = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="text-xl md:text-2xl font-bold">
-            Travel Agency
+            {/* Givaj Educational Consult */}
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-[200px] h-10 inline-block ml-2"
+            />
           </Link>
 
           {/* Mobile Menu Button */}
@@ -121,9 +128,11 @@ const ServiceHeroSection = () => {
           at arcu. Id non feugiat et tempor accumsan sit fermentum sollicitudin
           pulvinar. Sodales vitae odio mi viverra.
         </p>
-        <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">
-          Start Your Visa Application
-        </button>
+        <Link to="/contact">
+          <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">
+            Start Your Visa Application
+          </button>
+        </Link>
       </div>
     </div>
   );

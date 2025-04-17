@@ -34,7 +34,7 @@ function NavBar() {
         <div className="flex items-center">
           <Link to="/">
             {/* <img src="/logo.png" alt="Logo" className="h-8 w-auto" /> */}
-            <h1 className="font-bold text-white">Travel Agency</h1>
+            <h1 className="font-bold text-white">Givaj Educational Consult</h1>
           </Link>
         </div>
 

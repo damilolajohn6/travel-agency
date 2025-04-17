@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import heroImg from "../assets/resource-img.png";
+import logo from "../assets/givaj1.png";
 
 const ContactHeroSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,7 +39,11 @@ const ContactHeroSection = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="text-xl md:text-2xl font-bold">
-            TravelAgency
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-[200px] h-10 inline-block ml-2"
+            />
           </Link>
 
           {/* Mobile Menu Button */}

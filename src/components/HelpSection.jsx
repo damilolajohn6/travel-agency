@@ -1,5 +1,6 @@
 import React from "react";
 import teamImage from "../assets/help.png";
+import { Link } from "react-router-dom";
 
 function HelpSection() {
   return (
@@ -36,9 +37,11 @@ function HelpSection() {
           </div>
         </div>
         <div className="flex items-center justify-center py-6">
-          <button className="bg-blue-700  text-white py-3 px-6 rounded-md hover:bg-blue-950 transition text-sm md:text-base">
-            Start Your Visa Application
-          </button>
+          <Link to="/contact">
+            <button className="bg-blue-700  text-white py-3 px-6 rounded-md hover:bg-blue-950 transition text-sm md:text-base">
+              Start Your Visa Application
+            </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -9,7 +9,9 @@ const Footer = () => {
           <div className="w-full md:w-2/3 px-4">
             <Link to="/" className="flex items-center">
               {/* <img src={image} alt="Qwik Logo" className="" /> */}
-              <h2 className="font-semibold text-lg ml-2">Travel Agency</h2>
+              <h2 className="font-semibold text-lg ml-2">
+                Givaj Educational Consult
+              </h2>
             </Link>
             <p className="mt-2 text-sm sm:text-base">
               Helping thousands of students secure visas and <br />
@@ -90,7 +92,8 @@ const Footer = () => {
 
       <div className="bg-blue-500 text-white mx-auto px-6 sm:px-10 text-center py-4 flex items-center justify-between">
         <p className="text-sm font-semibold">
-          &copy; {new Date().getFullYear()} Travel Agency. All rights reserved.
+          &copy; {new Date().getFullYear()} Givaj Educational Consult. All
+          rights reserved.
         </p>
         <div className="flex gap-4 mt-2">
           <a

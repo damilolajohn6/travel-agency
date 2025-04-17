@@ -1,5 +1,6 @@
 import React from "react";
 import Image1 from "../assets/services.png";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -138,9 +139,11 @@ export default function ServiceSection() {
                   <li key={i}>{item}</li>
                 ))}
               </ul>
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
-                {service.button}
-              </button>
+              <Link to="/contact">
+                <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+                  {service.button}
+                </button>
+              </Link>
             </div>
           </div>
         ))}

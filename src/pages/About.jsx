@@ -2,7 +2,7 @@ import React from 'react'
 import AboutHeroSection from "../components/AboutHeroSection";
 import Vission from '../components/Vission';
 import HelpSection from '../components/HelpSection';
-import VideoPlayer from "../components/VideoPlayer";
+//import VideoPlayer from "../components/VideoPlayer";
 import Testimonial from '../components/Testimonial';
 import FAQSection from '../components/FAQSection';
 import ContactForm from '../components/ContactForm';
@@ -15,9 +15,9 @@ const About = () => {
       <AboutHeroSection />
       <Vission />
       <HelpSection />
-      <div className="flex items-center justify-center bg-blue-950">
+      {/* <div className="flex items-center justify-center bg-blue-950">
         <VideoPlayer videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
-      </div>
+      </div> */}
       <Testimonial />
       <FAQSection />
       <ContactForm />

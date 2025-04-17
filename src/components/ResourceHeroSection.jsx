@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import heroImg from "../assets/resource-img.png";
-
+import logo from "../assets/givaj1.png";
 
 const ResourceHeroSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,7 +39,12 @@ const ResourceHeroSection = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="text-xl md:text-2xl font-bold">
-            TravelAgency
+            {/* Givaj Educational Consult */}
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-[200px] h-10 inline-block ml-2"
+            />
           </Link>
 
           {/* Mobile Menu Button */}
@@ -123,9 +128,11 @@ const ResourceHeroSection = () => {
           Your Ultimate Guide to Student Visas, Scholarships, and Grants – All
           the Resources You Need in One Place
         </p>
-        <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">
-          Start Your Visa Application
-        </button>
+        <Link to="/contact">
+          <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">
+            Start Your Visa Application
+          </button>
+        </Link>
       </div>
     </div>
   );

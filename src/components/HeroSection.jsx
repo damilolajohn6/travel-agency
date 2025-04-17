@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import heroImg from "../assets/hero-img.png";
+import logo from "../assets/givaj1.png";
 
 const HeroSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,11 +35,12 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       {/* Header */}
-      <header className="absolute top-0 left-0 w-full px-4 md:px-10 py-4">
+      <header className="absolute top-0 left-0 w-full px-4 md:px-10 py-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="text-xl md:text-2xl font-bold">
-            Travel Agency
+            {/* Givaj Educational Consult */}
+            <img src={logo} alt="Logo" className="w-[200px] h-10 inline-block ml-2" />
           </Link>
 
           {/* Mobile Menu Button */}
@@ -124,9 +126,11 @@ const HeroSection = () => {
           Helping thousands of students secure visas and <br />
           scholarships for their dream universities.
         </p>
-        <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">
-          Start Your Visa Application
-        </button>
+        <Link to="/contact">
+          <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">
+            Start Your Visa Application
+          </button>
+        </Link>
       </div>
     </div>
   );
